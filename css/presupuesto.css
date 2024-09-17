@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "RedditMono";
+    src: url(/Martín_Menargues_trabajofinalJS/css/RedditMono-VariableFont_wght.ttf);
+    font-style: bold; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header a {
+    font-family: "RedditMono", "Arial";
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+header {
+    border: 6px solid white;
+    background-color: rgba(84, 72, 71, 0.8);
+}
+
+body {
+    background-color: blanchedalmond;
+}
+body h1 {
+    font-size: 30px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2, p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+form {
+    margin: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-style: bold;
+}  
+
+legend {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-style: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+footer {
+    display: grid;
+    place-items: center;
+    height: 50px;
+    background-color: gray;
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    color: white;
+    font-size: 15px; 
+}

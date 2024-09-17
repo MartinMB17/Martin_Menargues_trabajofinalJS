@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="/Martín_Menargues_trabajofinalJS/css/presupuesto.css">
+    <script src="/Martín_Menargues_trabajofinalJS/js/presupuesto.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="./index.html">MARTIN´S RENTING</a></h1>
+    </header>
+    
+    <h1>FORMULARIO DE SOLICITUD</h1> <br>
+
+    <form id="formPresupuesto" action="javascript:void(0)" method="post">
+        <fieldset>
+            <legend><b>DATOS DE CONTACTO</b></legend>
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="introduce nombre" maxlength="15" pattern="[A-Za-zÀ-ÿ\u00f1\u00d1\s]+" title="Debe contener solo letras mayúsculas y minusculas." required> 
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="introduce apellidos" maxlength="40" pattern="[A-Za-zÀ-ÿ\u00f1\u00d1\s]+"  title="Debe contener solo letras mayúsculas y minusculas." required> 
+
+            <label for="telefono">Número de teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="introduce número" maxlength="9" pattern="\d+(\.\d+)?" title="Debe contener solo números (máx.9)." required> 
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="introduce email" title="El formato de debe ser el siguiente: xxxxxxx@gmail.com" required> 
+        </fieldset>
+
+        <fieldset class="budget-section">
+            <legend><b>PRESUPUESTO</b></legend>
+
+            <!-- Producto -->
+            <label for="producto">Producto:</label>
+            <select id="producto" name="producto" required>
+                <option value="">- Seleccione vehículo -</option>
+                <option value="100">Volkswagen Golf GTI - 100€/mes</option>
+                <option value="200">Mercedes GLA - 200€/mes</option>
+                <option value="300">Lamborghini Urus - 300€/mes</option>
+            </select>
+
+            <!-- Plazo -->
+            <label for="plazo">Plazo (meses):</label>
+            <input type="number" id="plazo" name="plazo" min="1" value="1" required>
+            <p>Se aplicará un <b>descuento del 2%</b> por cada mes alquilado (máximo 20%).</p>
+
+            <!-- Extras -->
+            <label><b>EXTRAS:</b></label>
+            <input type="checkbox" id="extra1" name="extras" value="50">
+            <label for="extra1">Seguro acompañante - 50€</label><br>
+            <input type="checkbox" id="extra2" name="extras" value="75">
+            <label for="extra2">Extras en salpicadero - 75€</label><br>
+            <input type="checkbox" id="extra3" name="extras" value="100">
+            <label for="extra3">Combustión adicional - 100€</label><br>
+
+            <!-- Presupuesto Final -->
+            <label for="presupuesto"><b>Presupuesto Final:</b></label>
+            <input type="text" id="presupuesto" name="presupuesto" readonly> <!-- Mantener readonly -->
+
+        </fieldset>
+
+        <!-- Condiciones y Envío -->
+        <fieldset>
+            <legend>TÉRMINOS Y CONDICIONES</legend>
+            <input type="checkbox" id="condiciones" name="condiciones" required>
+            <label for="condiciones">Acepto las condiciones de privacidad(*).</label>
+            <button type="submit">Enviar</button>
+            <button type="reset">Restablecer</button>
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Martin´s Renting</p>
+      </footer>
+      
+</body>
+</html>

@@ -1,0 +1,101 @@
+
+@font-face {
+    font-family: "RedditMono";
+    src: url(/Martín_Menargues_trabajofinalJS/assets/RedditMono-VariableFont_wght.ttf);
+    font-style: bold; 
+}
+
+header a {
+    font-family: "RedditMono", "Arial";
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+header {
+    border: 6px solid white;
+    background-color: rgba(84, 72, 71, 0.8);
+    margin-bottom: 30px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:bisque;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.gallery img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border: 15px solid #ddd;
+    border-radius: 4px;
+}
+
+.nav-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+.nav-btn:hover {
+    background-color: #555;
+}
+
+#cuadro-tx {
+    position: relative;
+    bottom: 100px;
+    width: 700px;
+    height: 400px;
+    margin: 40px auto;
+    padding-top: 60px;
+}
+
+#cuadro-tx p {
+    font-family: "RedditMono","Arial";
+    font-style: bold;
+    font-size: 60px;
+}
+
+footer {
+    display: grid;
+    place-items: center;
+    height: 50px;
+    background-color: gray;
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    color: white;
+    font-size: 15px; 
+}
