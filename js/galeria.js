@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
     // Lista de imágenes
-    var images = ['images/foto1.jpeg', 'images/foto2.jpg', 'images/foto3.jpg', 'images/foto4.jpg'];
+    var images = ['/Martín_Menargues_trabajofinalJS/images/foto1.jpeg', '/Martín_Menargues_trabajofinalJS/images/foto2.jpg', '/Martín_Menargues_trabajofinalJS/images/foto3.jpg', '/Martín_Menargues_trabajofinalJS/images/foto4.jpg'];
 
     var currentIndex = 0;
 
