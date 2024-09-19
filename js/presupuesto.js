@@ -40,7 +40,7 @@ formPresupuesto.addEventListener('submit', function(event) {
     alert('Presupuesto total: ' + presupuesto.value); 
 });
 
-// Manejar el restablecimiento del formulario
+// Manejar el reset del formulario
 formPresupuesto.addEventListener('reset', function() {
     presupuesto.value = ''; 
 });
