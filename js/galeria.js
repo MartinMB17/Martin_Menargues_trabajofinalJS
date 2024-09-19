@@ -1,8 +1,7 @@
 
 $(document).ready(function() {
-    // Lista de imágenes
+    // Lista de imágenes con rutas relativas
     var images = ['../images/foto1.jpeg', '../images/foto2.jpg', '../images/foto3.jpg', '../images/foto4.jpg'];
-
     var currentIndex = 0;
 
     function updateImage() {
@@ -18,4 +17,8 @@ $(document).ready(function() {
         currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
         updateImage();
     });
+
+    // Inicializa la galería con la primera imagen
+    updateImage();
 });
+
